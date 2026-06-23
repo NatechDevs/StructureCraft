@@ -2,7 +2,7 @@
 
 > Browser-based ASCII file & folder architecture visualizer. Upload a folder, get an instant ASCII tree.
 
-![status](https://img.shields.io/badge/source-private-lightgrey) ![stack](https://img.shields.io/badge/stack-PHP%20%7C%20JavaScript%20%7C%20HTML%20%7C%20CSS-orange)
+![status](https://img.shields.io/badge/status-public-brightgreen) ![stack](https://img.shields.io/badge/stack-PHP%20%7C%20JavaScript%20%7C%20HTML%20%7C%20CSS-orange)
 
 ## What this is
 
@@ -44,7 +44,7 @@ The core challenge was the two-way conversion: first from a flat list of file pa
 
 ## Source code
 
-This repository is private. Source code is available for review on request — happy to walk through the codebase directly in a call, or grant temporary read-only access for serious inquiries.
+Open-source and available on GitHub. Feel free to explore the codebase, open issues, or submit pull requests.
 
 ## Contact
 
