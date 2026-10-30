@@ -1,0 +1,14 @@
+{
+  "name": "structurecraft",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser-local directory tree generator for project documentation",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --production"
+  },
+  "engines": { "node": ">=22" }
+}
