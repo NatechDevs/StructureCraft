@@ -25,6 +25,7 @@
     apply(preference || (system.matches ? 'dark' : 'light'));
   });
   document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-current-year]').forEach(node => { node.textContent = String(new Date().getFullYear()); });
     apply(document.documentElement.dataset.theme);
     document.getElementById('themeToggle')?.addEventListener('click', () => {
       preference = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
