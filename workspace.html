@@ -9,16 +9,17 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <script src="assets/theme.js"></script>
-  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/navigation.js?v=2.1" defer></script>
+  <link rel="stylesheet" href="assets/styles.css?v=2.1">
   <script type="module" src="assets/app.mjs"></script>
 </head>
 <body>
   <a class="skip-link" href="#workspace">Skip to workspace</a>
   <header class="site-header">
     <a class="brand" href="./" aria-label="StructureCraft home">StructureCraft</a>
-    <nav aria-label="Main navigation"><a href="./">Home</a><a class="active" href="#workspace" aria-current="page">Workspace</a><a href="docs.html">Documentation</a><a href="https://github.com/NatechDevs/StructureCraft" target="_blank" rel="noopener noreferrer">Source <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#external"/></svg></a></nav>
+    <nav id="site-navigation" aria-label="Main navigation"><a href="./">Home</a><a class="active" href="#workspace" aria-current="page">Workspace</a><a href="docs.html">Documentation</a></nav>
     <span class="local-badge"><i></i> Browser-based. Private.</span><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" aria-pressed="false" title="Switch color theme"><svg class="icon theme-moon" aria-hidden="true"><use href="assets/icons.svg#moon"/></svg><svg class="icon theme-sun" aria-hidden="true"><use href="assets/icons.svg#sun"/></svg></button>
-  </header>
+  <button class="nav-toggle" id="navToggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation menu" hidden><span class="menu-label">Menu</span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path class="menu-top" d="M4 8h16"/><path class="menu-bottom" d="M4 16h16"/></svg></button></header>
   <main>
     <section class="intro" aria-labelledby="page-title">
       <div class="intro-main"><div class="eyebrow"><span class="eyebrow-line"></span> PROJECT DOCUMENTATION, SIMPLIFIED</div><h1 id="page-title">Your project.<br><em>Clearly mapped.</em></h1><p>Select a folder or paste a tree. Refine the details, then export the structure.</p></div>
@@ -61,7 +62,7 @@
     <section class="workflow-notes" aria-label="Working with StructureCraft"><article><span class="note-number">01 / IMPORT</span><h3>Start with what you have.</h3><p>Select a local folder or paste an existing tree. The example project is available to explore the controls.</p></article><article><span class="note-number">02 / REFINE</span><h3>Show the relevant details.</h3><p>Exclude dependencies, limit nesting, or filter by path. Every export follows the structure in your preview.</p></article><article><span class="note-number">03 / DOCUMENT</span><h3>Put the structure to work.</h3><p>Copy into a README, export structured JSON, or create a ZIP scaffold for a new project.</p></article></section>
     <section class="docs-callout"><div><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#book"/></svg><div><h2>The details, when you need them.</h2><p>Import guidance, filter controls, export formats, and practical examples.</p></div></div><a class="text-link" href="docs.html">Read the documentation <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow"/></svg></a></section>
   </main>
-  <footer class="site-footer"><span class="footer-brand">StructureCraft <span>by NatechDevs</span></span><span>Local processing. No accounts. No tracking.</span><a href="docs.html#privacy">Privacy & limitations</a></footer>
+  <footer class="site-footer"><span class="footer-brand">StructureCraft <span>by NatechDevs</span></span><span>Local processing. No accounts. No tracking.</span><div class="footer-links"><a href="docs.html#privacy">Privacy & limitations</a><a href="https://github.com/NatechDevs/StructureCraft" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#external"/></svg></a></div></footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div><noscript><p class="noscript">Enable JavaScript to use the workspace. Processing happens in your browser.</p></noscript>
 </body>
 </html>

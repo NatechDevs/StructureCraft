@@ -38,6 +38,10 @@ Output is rendered with DOM text nodes and `textContent`; filenames and pasted i
 - Technical copy describes behavior and export consequences directly. Avoid hype, fake counters, and marketing claims unrelated to the tool.
 - The preview always uses monospace so branch alignment is preserved.
 
+## Navigation
+
+The main header contains Home, Workspace, and Documentation. GitHub is a footer link. On narrow screens, `assets/navigation.js` enhances the header into an in-flow disclosure menu. Opening moves focus to its first link; Escape closes it and restores button focus. Outside clicks, leaving the header with the keyboard, and resizing to desktop close the menu. Without JavaScript, the links remain visible.
+
 ## Accessibility
 
 Input and output tabs use roving tabindex with Arrow/Home/End navigation. Fields have explicit labels; error descriptions and invalid state are attached to inputs. The workspace is reachable by skip link. Icons are decorative where controls already have accessible names. Focus indicators are visible, and motion honors `prefers-reduced-motion`.
