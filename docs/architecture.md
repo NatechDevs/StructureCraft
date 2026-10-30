@@ -46,6 +46,10 @@ The main header contains Home, Workspace, and Documentation. GitHub is a footer 
 
 Input and output tabs use roving tabindex with Arrow/Home/End navigation. Fields have explicit labels; error descriptions and invalid state are attached to inputs. The workspace is reachable by skip link. Icons are decorative where controls already have accessible names. Focus indicators are visible, and motion honors `prefers-reduced-motion`.
 
+## Open-source licensing
+
+Original code and documentation use the MIT license in the root `LICENSE`. Poppins font files retain their separate SIL OFL 1.1 license. `THIRD_PARTY_NOTICES.md` records their attribution and source. The build includes both root notices and the font license, so distributed source retains its licensing information. Community guidance and GitHub templates stay in the repository.
+
 ## Production packaging
 
 `scripts/build.mjs` validates required inputs, checks its exact output path before clearing it, and copies a public allowlist to `dist/`. PHP, tests, deployment notes, and tooling stay outside that output. Vercel's configuration includes a same-origin CSP, anti-framing, MIME protection, feature restrictions, and conservative asset caching. The local production preview applies the global headers to help detect CSP issues before release.

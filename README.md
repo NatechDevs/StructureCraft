@@ -2,6 +2,8 @@
 
 A browser-local directory tree generator for READMEs, technical documentation, project handoffs, and folder scaffolding.
 
+Licensed under the [MIT License](LICENSE). Bundled fonts retain their [separate license](THIRD_PARTY_NOTICES.md).
+
 ## Use the workspace
 
 Open the workspace from the landing page, then select a folder or paste an existing directory tree. Adjust the output settings, then copy or download the result. File contents are never read or uploaded.
@@ -74,6 +76,18 @@ All outputs follow the current name, filters, and maximum depth. ZIP exports are
 The page stores project paths and pasted content in memory only. Refreshing clears that state. There is no telemetry, backend processing, or third-party asset request. Only the light/dark appearance preference is saved in browser storage; project data is never persisted. Hosting providers may keep ordinary request logs. Clipboard and downloaded content are handled by the browser and operating system.
 
 Browser folder selection may omit empty directories. Folder imports support up to 50,000 files and 100 nested directories. Pasted trees support up to 20,000 lines and 100 nested levels. ZIP supports up to 65,535 entries. Very large previews may be slow on mobile devices. Names may need adaptation for a different operating system before ZIP extraction.
+
+## Contributing and support
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md) before opening a pull request. Use [GitHub Issues](https://github.com/NatechDevs/StructureCraft/issues) for ordinary bugs and feature requests. Report vulnerabilities through the private process in [SECURITY.md](SECURITY.md).
+
+See [CHANGELOG.md](CHANGELOG.md) for project changes. The repository is open source; the npm package remains marked private to avoid accidental package publication.
+
+## License and attribution
+
+Original project code and documentation are licensed under the [MIT License](LICENSE), copyright 2026 NatechDevs. Preserve the copyright and permission notice when redistributing the code. Poppins is distributed under the SIL Open Font License 1.1; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the [font license](assets/fonts/OFL.txt).
+
+The production build includes both project licensing notices and the font license. Third-party materials retain their own terms.
 
 ## Project structure
 

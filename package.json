@@ -10,5 +10,16 @@
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs --production"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "NatechDevs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatechDevs/StructureCraft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NatechDevs/StructureCraft/issues"
+  }
 }
